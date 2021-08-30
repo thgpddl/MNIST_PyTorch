@@ -12,6 +12,8 @@ import torchvision.transforms as transforms  # 用于图像变换
 from torch.utils.data import DataLoader
 
 def getLoader():
+    # ToTensor()：Converts a PIL Image or numpy.ndarray (H x W x C) in the range [0, 255] to a torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0] 
+    # 也即是该函数同时将图片标准化到[0,1]了
     transform=transforms.Compose([transforms.Resize((32,32)),
                                   transforms.ToTensor()])
     data_train=MNIST("./data",download=True,transform=transform)  # 下载到data文件夹
