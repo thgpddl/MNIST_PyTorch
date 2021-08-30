@@ -9,7 +9,7 @@ pytorch实现的MNIST
 - inference.py：网络推理
 
 ### 模型结构
-
+![image](https://user-images.githubusercontent.com/48787805/131326872-c30d4d6c-717d-43f4-8390-668db3b4154d.png)
 
 
 
